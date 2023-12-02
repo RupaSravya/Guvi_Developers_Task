@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <title>Profile</title>
+</head>
+<body>
+    <div id="profileDetails" class="container mt-5">
+        <h2>Welcome to your Profile</h2>
+        <!-- Display additional user details (to be fetched from MongoDB, not implemented in this example) -->
+        <p>Username: <span id="username"></span></p>
+        <p>Age: <span id="age"></span></p>
+        <p>DOB: <span id="dob"></span></p>
+        <p>Contact: <span id="contact"></span></p>
+        <button type="button" onclick="edit_details()">Edit Details</button>
+    </div>
+    <div class="container mt-5">
+    <form id="profileForm" style="display:none;">
+        <h2>Profile Info</h2>
+        <div class="form-group">
+            <label for="profileUsername">Username:</label>
+           <input type="text" id="profileusernameinput" readonly>
+        </div>  
+        <div class="form-group">
+            <label for="profileAge">Age:</label>
+           <input type="text" id="profileageinput" >
+        </div>
+        <div class="form-group">
+            <label for="profiledob">DOB:</label>
+           <input type="text" id="profiledobinput" >
+        </div>
+        <div class="form-group">
+            <label for="profileContact">Contact:</label>
+           <input type="text" id="profilecontactinput">
+        </div>
+        <button type="button" onclick="update_details()">Update</button>
+      </form>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>
