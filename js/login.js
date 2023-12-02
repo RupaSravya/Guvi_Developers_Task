@@ -2,7 +2,7 @@ function loginUser() {
     var username = $('#username').val();
     var password = $('#password').val();
 
-    // Use jQuery AJAX to send login data to the server
+    
     $.ajax({
         type: 'POST',
         url: 'php/login.php',
@@ -15,8 +15,8 @@ function loginUser() {
             else {
                 alert(response);
             }
-            // Redirect to profile page after successful login
-            //window.location.href = 'profile.html';
+            
+            window.location.href = 'profile.html';
         }
     });
 }
