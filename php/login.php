@@ -29,10 +29,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         //Verify Password 
         if(password_verify($password,$row["password"])) {
 
-            //$userName = $row["username"];
-          //  $userId = $row["id"];
+            $userName = $row["username"];
+            $userId = $row["id"];
 
-           // $redis.setex("user:$userId",600,json_encode($userData));
+           $redis.setex("user:$userId",600,json_encode($userData));
 
             echo "success";
             exit();
