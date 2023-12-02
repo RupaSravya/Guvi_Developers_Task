@@ -9,7 +9,7 @@ function loginUser() {
         data: { username: username, password: password },
         success: function(response) {
             if(response === "success"){
-                console.log("Ankit is there")
+                console.log("rupa is there")
                 window.location.href = 'profile.html';
             }
             else {
